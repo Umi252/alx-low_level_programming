@@ -19,7 +19,7 @@ int _strlen(char *s)
 }
 
 /**
- * str_concat - back a pointer to array 
+ * str_concat - back a pointer to array
  * @s1: Array one
  * @s2: Array two
  * Return: Always an array dinamic
@@ -33,7 +33,7 @@ char *str_concat(char *s1, char *s2)
 	/*If the array is empty*/
 	if (s1 ==  NULL)
 		s1 = "";
-	
+
 	if (s2 == NULL)
 		s2 = "";
 
