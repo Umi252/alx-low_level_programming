@@ -2,10 +2,11 @@
 #include <stdarg.h>
 #include <stdio.h>
 
+
 /**
-* print_all - prints anything
-* @format: list of types of arguments passed to the function
-*/
+ * print_all - prints anything
+ * @format: list of types of arguments passed to the function
+ */
 
 void print_all(const char * const format, ...)
 {
@@ -25,7 +26,7 @@ void print_all(const char * const format, ...)
 					break;
 				case 'i':
 					printf("%s%d", sep, va_arg(list, int));
-					reak;
+					break;
 				case 'f':
 					printf("%s%f", sep, va_arg(list, double));
 					break;
@@ -33,11 +34,11 @@ void print_all(const char * const format, ...)
 					str = va_arg(list, char *);
 					if (!str)
 						str = "(nil)";
-					printf("%s%s", sep, str);
-					break;
+						printf("%s%s", sep, str);
+						break;
 				default:
-					i++;
-					continue;
+						i++;
+						continue;
 			}
 			sep = ", ";
 			i++;
